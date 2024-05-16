@@ -1,0 +1,946 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#menu__toggle {
+  opacity: 0;
+  overflow-x: hidden;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+Resources body {
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x: 0.0rem;
+}
+
+.mover {
+  margin-bottom: 60px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+.dark-mode nav {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url(/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: GreatVibes-Regular-webfont;
+  src: url(/GreatVibes-Regular-webfont.ttf);
+}
+h2 {
+  margin-left: 70px;
+  font-size: 24px;
+  font-family: "myfont";
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "myfont";
+  font-weight: bolder;
+}
+
+nav {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-family: "myfont";
+  font-weight: bold;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  font-family: "myfont";
+  font-size: bold;
+  margin-top: 30px;
+  font-size: larger;
+  margin-left: 240px;
+}
+nav img {
+  width: 200px;
+  margin-left: 50px;
+}
+
+.dark {
+  margin-right: 30px;
+  width: 35px;
+}
+
+.drp {
+  color: #742296;
+}
+
+.fa-regular, .far {
+  font-size: 25px;
+}
+
+.circle {
+  display: flex;
+  margin-top: 20px;
+}
+
+.banner {
+  display: flex;
+  font-family: "myfont";
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+.banner img {
+  width: 260px;
+  height: 465px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.txt {
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 100px;
+}
+
+.woman {
+  margin-left: 40px;
+  margin-top: 45px;
+}
+
+.girl {
+  margin-right: 25px;
+}
+
+.purple {
+  background-color: #742296;
+  color: white;
+  padding: 6px 8px;
+  border: none;
+}
+
+.white {
+  border-color: #742296;
+  padding: 6px 8px;
+  border-top: 2px solid #742296;
+  border: left 4px solid #742296;
+  border-bottom: 2px solid #742296;
+  border-right: 4px solid;
+}
+
+.child {
+  margin-top: 45px;
+}
+
+.about {
+  font-family: "myfont";
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.about button:not(:disabled) {
+  cursor: pointer;
+  background-color: #742296;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+}
+.about p {
+  width: 458px;
+}
+
+.youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  background-image: url(/img/About\ img\ main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 435px;
+  height: 345px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.video img {
+  padding-top: 164px;
+  padding-left: 187px;
+}
+
+.video:before {
+  content: "";
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.serv1:before {
+  content: "";
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services {
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.media {
+  background-image: url(/img/Services\ 3.jpg);
+  height: 480px;
+  width: 320px;
+  background-size: cover;
+  position: relative;
+}
+.media img {
+  width: 35px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.media:before {
+  content: "";
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.serv1 {
+  background-image: url(/img/Service\ 1.jpg);
+  height: 480px;
+  width: 320px;
+  background-size: cover;
+  position: relative;
+}
+.serv1 h3 {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  right: 160px;
+  font-size: 25px;
+}
+.serv1 img {
+  width: 35px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.abt1 {
+  margin-bottom: 140px;
+}
+
+.abt2 {
+  margin-left: -5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.guys {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.gp {
+  background-image: url(/img/groom.jpg);
+  width: 415px;
+  height: 310px;
+  background-size: cover;
+}
+.gp img {
+  padding-top: 261px;
+  padding-left: 367px;
+}
+
+.Testimonials {
+  display: flex;
+  font-family: "myfont";
+  font-weight: bold;
+}
+.Testimonials h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.guys {
+  margin-top: 80px;
+  position: absolute;
+  left: 210px;
+}
+
+.Instagram {
+  font-family: "myfont";
+  font-weight: bold;
+}
+.Instagram h2 {
+  justify-content: center;
+  display: flex;
+}
+.Instagram h2 span {
+  font-family: GreatVibes-Regular-webfont;
+  padding-left: 10px;
+}
+
+.insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.insta img {
+  width: 125px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.btn button:not(:disabled) {
+  background-color: #742296;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.crd {
+  background-color: #742296;
+}
+
+.contact {
+  background-color: #742296;
+  color: white;
+  font-family: "myfont";
+}
+.contact img, .contact svg {
+  vertical-align: middle;
+  width: 120px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.contact h5 {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.first {
+  margin-left: 50px;
+}
+
+.cont {
+  display: flex;
+}
+.cont p {
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.cont p span {
+  color: #742296;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+/* Show dropdown content */
+.dropdown-content.show {
+  display: block;
+}
+
+.down {
+  margin-top: 140px;
+}
+
+.ro {
+  display: flex;
+}
+
+.bride {
+  margin-bottom: 60px;
+  margin-left: 210px;
+  position: relative;
+}
+
+.bri {
+  background-image: url(/img/bride.jpg);
+  width: 400px;
+  height: 340px;
+  background-size: cover;
+}
+.bri img {
+  padding-top: 292px;
+  padding-left: 352px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.row1 h4 {
+  position: absolute;
+  right: 160px;
+  bottom: 0px;
+  color: white;
+}
+
+.one {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  display: flex;
+}
+.one p {
+  margin-top: -4px;
+}
+
+.two {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.two p {
+  margin-top: -4px;
+}
+
+.three {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.three p {
+  margin-top: -4px;
+}
+
+.fa-solid fa-envelope {
+  margin-top: 5px;
+}
+
+.sec2 {
+  background-image: url(/img/Services\ 2.png);
+  background-size: cover;
+  width: 320px;
+  height: 480px;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+  color: #742296;
+}
+
+.fa-instagram:before {
+  padding-left: 20px;
+}
+
+.fa-brands, .fab {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.fa-copyright:before {
+  font-size: 20px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body .woman {
+    margin-left: 20px;
+  }
+  .about p {
+    width: 371px;
+  }
+  .fa-copyright:before {
+    font-size: 15px;
+  }
+  .last {
+    margin-top: 34px;
+  }
+  .mddd {
+    margin-bottom: 36px;
+  }
+  .dark {
+    margin-bottom: 35px;
+  }
+  .banner img {
+    width: 93px;
+    height: 300px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .txt {
+    margin-left: 39px;
+    margin-top: 35px;
+  }
+  .white {
+    padding: 4px 1px;
+  }
+  .purple {
+    padding: 4px 1px;
+  }
+  .container {
+    display: none;
+  }
+  .abt1 {
+    display: none;
+  }
+  .ser {
+    margin-left: 85px;
+  }
+  .move {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .video {
+    height: 380px;
+    width: 320px;
+  }
+  .video img {
+    padding-top: 174px;
+    padding-left: 131px;
+  }
+  .bride {
+    margin-left: 26px;
+  }
+  .guys {
+    position: absolute;
+    left: 122px;
+    position: relative;
+    width: 250px;
+    font-size: 13px;
+  }
+  .bride {
+    margin-left: 300px;
+    width: 250px;
+    font-size: 13px;
+  }
+  .Instagram img {
+    width: 100px;
+  }
+  .Instagram .Testimonials img {
+    width: 150px;
+  }
+  .Testimonials {
+    flex-direction: column;
+  }
+  .about {
+    font-size: 13px;
+  }
+  .col-md-6 {
+    margin-left: -6px;
+  }
+  .txt p {
+    font-size: 13px;
+  }
+  .contact {
+    font-size: 13px;
+  }
+  .contact img {
+    width: 100px;
+  }
+  .media {
+    width: 220px;
+  }
+  .media img {
+    padding-top: 366px;
+    padding-left: 185px;
+    width: 220px;
+  }
+  .se2 {
+    width: 250px;
+    height: 402px;
+  }
+  .serv1 {
+    width: 240px;
+  }
+  .serv1 img {
+    padding-top: 368px;
+    padding-left: 229px;
+    width: 260px;
+  }
+  .mover {
+    margin-left: 0px;
+  }
+  nav ul {
+    display: none;
+  }
+  .sec2 {
+    width: 240px;
+  }
+  .row1 h4 {
+    position: absolute;
+    right: 93px;
+  }
+  .serv1 h3 {
+    right: 95px;
+  }
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 575px) {
+  h2 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .row1 {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .row1 h4 {
+    display: none;
+  }
+  nav {
+    height: 5vh;
+  }
+  nav img {
+    width: 70px;
+    margin-left: 100px;
+    margin-top: 7px;
+  }
+  nav ul {
+    display: none;
+  }
+  .dark {
+    width: 20px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  .txt {
+    margin-left: 15px;
+    margin-top: 40px;
+    font-size: 13px;
+  }
+  .banner {
+    margin: 0px;
+  }
+  .banner img {
+    width: 154px;
+    height: 100px;
+  }
+  .banner button {
+    display: flex;
+    padding: 2px;
+    display: none;
+  }
+  .banner button, .banner input, .banner optgroup, .banner select, .banner textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: hidden;
+  }
+  .hamburger-menu {
+    overflow-x: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .move {
+    margin-left: 0px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .about p {
+    width: 374px;
+  }
+  .abt1 {
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+  .about {
+    font-size: 12px;
+    text-align: center;
+  }
+  .about button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .services {
+    margin-bottom: 20px;
+  }
+  .services img {
+    height: 170px;
+    margin-bottom: 0px;
+    width: 100px;
+    display: none;
+  }
+  .services h2 {
+    margin-top: 25px;
+  }
+  .Testimonials {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Testimonials h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .Testimonials p {
+    font-size: 12px;
+  }
+  .Testimonials h5 {
+    font-size: 15px;
+  }
+  .bride {
+    margin-left: 0px;
+    display: none;
+  }
+  .guys {
+    margin-top: 0px;
+    left: 0px;
+    position: relative;
+  }
+  .guys img {
+    width: 250px;
+  }
+  .guys h6 {
+    font-size: 12px;
+  }
+  .insta img {
+    width: 40px;
+    height: 90px;
+  }
+  .container {
+    display: none;
+  }
+  .txt p {
+    display: none;
+  }
+  .about img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .serv1 h3 {
+    display: none;
+  }
+  .row1 {
+    display: flex;
+    justify-content: center;
+  }
+  .contact {
+    font-size: 11px;
+    display: flex;
+  }
+  .contact h5 {
+    font-size: 12px;
+  }
+  .contact img {
+    width: 50px;
+  }
+  .contact .fa-brands, .contact .fab {
+    font-size: 15px;
+  }
+  .text {
+    display: none;
+  }
+  .first {
+    margin-left: 0px;
+  }
+  .media {
+    width: 100px;
+    height: 170px;
+  }
+  .serv1 {
+    width: 100px;
+    height: 170px;
+  }
+  .gp {
+    width: 250px;
+    height: 200px;
+  }
+  .mdd {
+    position: relative;
+  }
+  .fa-copyright:before {
+    font-size: 10px;
+  }
+  .gp img {
+    display: none;
+  }
+  .row {
+    display: flex;
+  }
+  .fa-circle-play:before, .fa-play-circle:before {
+    content: "\f144";
+    display: none;
+  }
+  .fa-circle-check:before {
+    content: "\f058";
+    display: none;
+  }
+  .sec2 {
+    width: 100px;
+    height: 170px;
+  }
+  .contact {
+    padding-left: 12px;
+  }
+  .contact img {
+    margin-top: 0px;
+  }
+  .contact .row > * {
+    flex-shrink: 0;
+    width: 50%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+  .mover {
+    margin-bottom: 0px;
+  }
+  .down {
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  .nav {
+    display: none;
+  }
+  .menu__btn {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 360px) {
+  .about p {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
