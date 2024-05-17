@@ -546,10 +546,26 @@ nav img {
 }
 
 .sec2 {
-  background-image: url(img/Service\ 2.png);
-  background-size: cover;
+  background-color: #742296;
   width: 320px;
   height: 480px;
+  position: relative;
+  color: white;
+}
+.sec2 img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 35px;
+}
+.sec2 span {
+  text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Adjust the thickness */
+}
+.sec2 h5 {
+  padding-left: 15px;
+  margin-top: 15px;
 }
 
 .dropdown-toggle {
