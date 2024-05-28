@@ -115,6 +115,7 @@ Resources body {
 .dark-mode {
   background-color: black;
   color: white;
+  transition: background-color 0.4s ease;
   overflow-x: hidden;
 }
 .dark-mode nav {
@@ -150,6 +151,7 @@ nav {
   height: 10vh;
   font-family: "myfont";
   font-weight: bold;
+  margin-top: 10px;
 }
 nav ul {
   list-style-type: none;
@@ -163,13 +165,14 @@ nav ul {
   margin-left: 240px;
 }
 nav img {
-  width: 200px;
+  width: 170px;
   margin-left: 50px;
 }
 
 .dark {
   margin-right: 30px;
-  width: 35px;
+  width: 30px;
+  border-radius: 50px;
 }
 
 .drp {
@@ -563,14 +566,22 @@ nav img {
   right: 0px;
   width: 35px;
 }
-.sec2 span {
-  text-decoration: underline;
-  text-decoration: underline;
-  text-decoration-thickness: 2px; /* Adjust the thickness */
-}
 .sec2 h5 {
   padding-left: 15px;
   margin-top: 15px;
+}
+.sec2 hr {
+  margin: -17px;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 6.25;
+  width: 75px;
+  margin-bottom: 1rem;
+}
+
+.und {
+  color: white;
 }
 
 .dropdown-toggle {
@@ -766,6 +777,7 @@ nav img {
   nav {
     height: 5vh;
     margin-bottom: 10px;
+    margin-top: 5px;
   }
   nav img {
     width: 70px;
