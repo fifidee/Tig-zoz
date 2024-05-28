@@ -9,7 +9,10 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
-
+.piccs{
+  display: flex;
+  justify-content: center;
+}
 
 
 #menu__toggle {
@@ -116,6 +119,7 @@ body {
     color: white;
 
 }
+
 }
 
 // font
@@ -670,6 +674,10 @@ body
   margin-left: 20px;
  
 }
+.menu__box {
+ 
+  width: 46%;
+}
 .about p {
   width: 371px;
 }
@@ -729,12 +737,12 @@ h1{
   font-size: 14px;
 }
 .video {
-  height: 380px;
+  height: 280px;
   width: 320px;
 }
 .video img {
-  padding-top: 174px;
-  padding-left: 131px;
+  padding-top: 124px;
+  padding-left: 124px;
 }
 .bride {
   margin-left: 26px;
@@ -787,7 +795,10 @@ position: absolute;
 img{ width: 100px
 
 }
-
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 }
 .media {
   width: 220px;
@@ -851,6 +862,9 @@ nav{
           font-size: 14px;
 
         }
+        .woman {
+          margin-top: 20px;
+      }
         .row1 { 
         column-gap: 5px;
         h4 {
@@ -1057,7 +1071,10 @@ img{
 .fa-brands, .fab {
   font-size: 15px;
 }
-
+p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
 
 
 }
